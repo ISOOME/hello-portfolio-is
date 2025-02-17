@@ -1,60 +1,77 @@
+/* Global Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     background-image: url("background.jpg");
     background-color: #f4f4f4;
     text-align: center;
-    text-color: black
+    color: black; /* Fixes the text-color property */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
+/* Header Styling */
 header {
-  background-color: #f1f1f1;
-  padding: 20px;
-  text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
 }
+
+/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-{
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-/* Style the top navigation bar */
+/* Top Navigation Bar Styling */
 .topnav {
-  overflow: hidden;
-  background-color: #333;
+    overflow: hidden;
+    background-color: #333;
 }
 
-/* Style the topnav links */
 .topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-/* Change color on hover */
+/* Hover Effect for Topnav Links */
 .topnav a:hover {
-  background-color: #dddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 
+/* Section Styling */
+section {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Footer Styling */
 footer {
-    color: black;
-    padding: 5px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Ensures footer sticks to bottom */
 }
