@@ -50,3 +50,8 @@ body {
   background-color: #dddd;
   color: black;
 }
+
+footer {
+    color: white;
+    padding: 5px;
+}
